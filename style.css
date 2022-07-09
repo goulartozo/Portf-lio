@@ -144,7 +144,6 @@ h1 {
   gap: 6em;
   justify-content: center;
   align-items: flex-end;
-  flex-wrap: wrap;
 }
 
 .artes2 {
@@ -253,6 +252,8 @@ footer {
 
   .banner1 {
     height: 10em;
+    background-image: url(/Portf-lio/img/inteiro\ 1.png);
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -267,7 +268,7 @@ footer {
   }
 
   .erro img {
-    width: 380px;
+    width: 350px;
     height: 450px;
   }
 
