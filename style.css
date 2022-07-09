@@ -68,6 +68,7 @@ h1 {
   background-color: white;
   align-items: center;
   padding: 1em;
+  flex-wrap: wrap;
 }
 
 .eu img {
@@ -133,6 +134,7 @@ h1 {
   height: 43em;
   background-image: url(/img/inteiro\ 1.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .artes {
@@ -141,6 +143,7 @@ h1 {
   gap: 6em;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .artes2 {
@@ -150,10 +153,11 @@ h1 {
 }
 
 .banner2 {
-  width: 100%;
   height: 30em;
   background-image: url(/img/Frame\ 2.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .frase {
@@ -182,6 +186,7 @@ h1 {
   align-items: center;
   gap: 2em;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .carousel {
@@ -196,7 +201,6 @@ footer {
   font-family: "Harmattan", sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  padding-bottom: 0.7em;
 }
 
 .core {
@@ -211,8 +215,121 @@ footer {
 }
 
 .container_footer {
+  flex-wrap: wrap;
   display: flex;
   gap: 2em;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .container_header {
+    flex-direction: column;
+  }
+
+  .container_sobre {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
+
+  .container_footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.1em;
+  }
+
+  .banner2 {
+    height: 10em;
+  }
+
+  .banner1 {
+    height: 10em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .artes {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    align-items: center;
+  }
+
+  .erro img {
+    width: 380px;
+    height: 450px;
+  }
+
+  .don img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .section {
+    display: flex;
+    padding: 2em 0.5em;
+  }
+
+  .eu img {
+    width: 350px;
+    height: 380px;
+  }
+
+  .ajuste img {
+    width: 350px;
+    height: 220px;
+  }
+
+  .container_artes {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0.05em;
+    position: relative;
+    align-items: center;
+  }
+
+  .container_sobre {
+    color: white;
+    display: flex;
+    gap: 2em;
+    padding: 2em 0.5em;
+    align-items: center;
+  }
+
+  .frase {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0.5em;
+    gap: 1em;
+
+    font-family: "Jost", sans-serif;
+  }
+
+  .frase p {
+    font-size: 2em;
+    text-align: justify;
+    font-weight: 600;
+  }
+
+  .items {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: 1;
+  }
+
+  .items img {
+    width: 114px;
+    height: 114px;
+  }
 }
