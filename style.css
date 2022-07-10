@@ -145,6 +145,7 @@ h1 {
   gap: 6em;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .artes2 {
@@ -166,19 +167,21 @@ h1 {
   flex-direction: column;
   padding: 2em;
   gap: 4em;
-
+  
   font-family: "Jost", sans-serif;
 }
 
 .frase p {
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: justify;
   font-weight: 600;
 }
 
 .section {
   display: flex;
-  padding: 4em 26em;
+  flex-direction: column;
+  padding: 4em 10em;
+  
 }
 
 .items {
