@@ -91,6 +91,7 @@ h1 {
   align-items: center;
   font-size: 2em;
   gap: 1em;
+  text-align: justify;
 }
 
 .container_sobre {
@@ -298,6 +299,105 @@ footer {
     padding: 0.5em 0.05em;
     position: relative;
     align-items: center;
+  }
+
+  .container_sobre {
+    color: white;
+    display: flex;
+    gap: 2em;
+    padding: 2em 0.5em;
+    align-items: center;
+  }
+
+  .frase {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0.5em;
+    gap: 1em;
+
+    font-family: "Jost", sans-serif;
+  }
+
+  .frase p {
+    font-size: 2em;
+    text-align: justify;
+    font-weight: 600;
+  }
+
+  .items {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: 1;
+  }
+
+  .items img {
+    width: 114px;
+    height: 114px;
+  }
+}
+/*
+@media (min-width: 1440px) {
+  .container_sobre {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    padding: 4em;
+    text-align: center;
+    gap: 0.1em;
+  }
+
+  .banner2 {
+    height: 32em;
+  }
+
+  .banner1 {
+    height: 32em;
+    background-image: url(/Portf-lio/img/inteiro\ 1.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .artes {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 2em 10em;
+    align-items: center;
+  }
+
+  .don img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .section {
+    display: flex;
+
+    padding: 2em 10em;
+  }
+
+  .eu img {
+    width: 350px;
+    height: 380px;
+  }
+
+  .ajuste img {
+    width: 350px;
+    height: 220px;
+  }
+
+  .container_artes {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 10em;
+    position: relative;
   }
 
   .container_sobre {
